@@ -7,8 +7,12 @@ export default function ListView(props) {
     return (
         <div className={cardClass}>
             {props.cards.map( items => (
-                <div className='divImg'>
+                <div className='divImgList'>
                     <img src={items.img}/>
+                    <p>{items.name}</p>
+                    <p>{items.color}</p>
+                    <p>{items.price}</p>
+                    <button>Add to cart</button>
                 </div>     
             ))}
         </div>
