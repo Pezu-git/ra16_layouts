@@ -25,7 +25,6 @@ import ListView from './ListView';
   
 
   switchItems(event) {
-    console.log(event.target)
     const itemList = prodData;
     if(this.state.done) {
       iconState = 'view_module'
@@ -36,8 +35,6 @@ import ListView from './ListView';
   }
 
   render() {
-    const newCardState = this.state.cardSwitchState
-    console.log(newCardState)
     return (
       <div className='mainContainer'>
         <div className='iconContainer'>
