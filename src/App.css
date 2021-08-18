@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+.mainContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.button {
+  border:none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  cursor: pointer;
+  color: rgb(111, 114, 114);
+}
+
+.iconContainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.disNone {
+  z-index: 0;
+  display: none;
+}
+
+
