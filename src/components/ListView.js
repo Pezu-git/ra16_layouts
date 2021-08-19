@@ -9,7 +9,7 @@ export default function ListView(props) {
         <div key={uuidv4()} className={cardClass}>
             {props.cards.map( items => (
                 <div key={uuidv4()} className='divImgList'>
-                    <img src={items.img} alt={items.color}/>
+                    <img src={items.img} alt={items.color} width='300px' height='300px'/>
                     <p key={uuidv4()}>{items.name}</p>
                     <p key={uuidv4()}>{items.color}</p>
                     <p key={uuidv4()}>${items.price}</p>
