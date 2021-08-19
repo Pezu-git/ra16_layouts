@@ -1,11 +1,11 @@
 
 import './App.css';
-import Portfolio from './components/Store';
+import Store from './components/Store';
 
 export default function App() {
   return (
     <div className='container'>
-      <Portfolio/>
+      <Store/>
   </div>
   );
 }
