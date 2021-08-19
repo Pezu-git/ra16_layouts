@@ -1,6 +1,4 @@
 /* eslint-disable no-unreachable */
-
-import propTypes from 'prop-types'
 import { Component } from 'react'
 import  products  from '../DisplayProducts/products'
 import IconSwitch from './IconSwitch';
@@ -60,5 +58,7 @@ import ListView from './ListView';
     )
   }
 }
+
+
 
 export default Store
