@@ -8,7 +8,6 @@ import ListView from './ListView';
 
   const prodData = products
   let iconState = 'view_list'
-
  class Store extends Component  {
   constructor(props) {
     super(props);
@@ -20,9 +19,7 @@ import ListView from './ListView';
     this.switchItems = this.switchItems.bind(this)
   }
 
-  
-
-  switchItems(event) {
+  switchItems() {
     const itemList = prodData;
     if(this.state.done) {
       iconState = 'view_module'
@@ -37,7 +34,6 @@ import ListView from './ListView';
       <div className='mainContainer'>
         <div className='iconContainer'>
           <IconSwitch 
-            
             icon={iconState}
             onSwitch={this.switchItems}
           />
@@ -47,12 +43,12 @@ import ListView from './ListView';
             id='CardsView'
             cards={prodData}
             className={this.state.cardSwitchState}
-            />
-            <ListView 
+          />
+          <ListView 
             id='ListView'
             cards={prodData}
             className={this.state.cardSwitchState}
-            />
+          />
         </div>
       </div>
     )

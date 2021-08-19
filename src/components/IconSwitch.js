@@ -13,7 +13,3 @@ export default function IconSwitch(props) {
     </button>       
   )
 }
-
-IconSwitch.propTypes = {
-  
-}
