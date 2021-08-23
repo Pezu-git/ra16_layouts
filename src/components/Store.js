@@ -31,21 +31,21 @@ import ListView from './ListView';
 
   render() {
     return (
-      <div className='mainContainer'>
-        <div className='iconContainer'>
+      <div className="mainContainer">
+        <div className="iconContainer">
           <IconSwitch 
             icon={iconState}
             onSwitch={this.switchItems}
           />
         </div>
-        <div className='cardContainer'>
+        <div className="cardContainer">
           <CardsView 
-            id='CardsView'
+            id="CardsView"
             cards={prodData}
             className={this.state.cardSwitchState}
           />
           <ListView 
-            id='ListView'
+            id="ListView"
             cards={prodData}
             className={this.state.cardSwitchState}
           />
