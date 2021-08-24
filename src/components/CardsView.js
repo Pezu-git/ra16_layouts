@@ -1,6 +1,8 @@
 import { v4 as uuidv4 } from 'uuid';
+import propTypes from 'prop-types'
 
 export default function CardsView(props) {
+    console.log(props)
     let cardClass = props.className
     if(props.id !== props.className) {
         cardClass = 'disNone'
@@ -21,4 +23,8 @@ export default function CardsView(props) {
             ))}
         </div>
     )
+}
+
+CardsView.propTypes = {
+    items: propTypes.object
 }
